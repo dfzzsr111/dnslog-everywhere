@@ -1,0 +1,33 @@
+# Build output
+build/
+stage/
+*.class
+
+# Local API jar (never commit Burp's jar or your own copy of it)
+lib/*.jar
+!lib/.gitkeep
+
+# IDE / editor
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+.settings/
+.classpath
+.project
+
+# OS
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Dev scratch (probes, harness classes, logs)
+harness/
+probe/
+*.log
+*.err
+
+# Secrets / local config
+*.local
+.env
